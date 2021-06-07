@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+$("#b1").click(function(){
+if($(this).html()=="profile")
+{
+$(this).html("hide");
+$("p").show();
+}
+else
+{
+$(this).html("profile");
+$("p").hide();
+}
+});
+});
+</script>
+<style>
+p
+{
+display:none;
+}
+div
+{
+box-shadow:10 px 10 px 5 px grey;
+}
+</style>
+</head>
+<body>
+<button id="b1">profile</button> <br>
+<p>
+Username:
+<input type="text" name="t1" value="AmoghBurte"><br>
+Password:
+<input type="text" name="t2" value="amoghb@00"><br>
+Year of graduation:
+<input type="text" name="t3" value="3rd"><br>
+Department:
+<input type="text" name="t4" value="Computer"><br>
+Semester:
+<input type="text" name="t5" value="5"><br>
+</p>
+<div align='center' style="width:500px;height:250px;text-align:center;border:1px solid #000;">
+<table align='center'>
+<tr>
+<td>
+<h2>StudyRoom</h2>
+</td>
+</tr>
+<tr colspan='2'>
+<td>Year</td>
+<td><select name='s1'>
+<option>1st</option>
+<option>2nd</option>
+<option>3rd</option>
+<option>4th</option>
+</select>
+</td>
+</tr>
+<tr><td>Department:</td>
+<td>
+<select name='s2'>
+<option>Civil</option>
+<option>Chemical</option>
+<option>Computer</option>
+<option>EXTC</option>
+<option>Mechcanical</option>
+</select>
+</td></tr>
+<tr>
+<td>
+Semester:</td>
+<td>
+<select name='s3'>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+<option>V</option>
+<option>VI</option>
+<option>VII</option>
+<option>VIII</option>
+</select>
+</td></tr>
+<tr colspan='2'><td><a href='C:\Users\Vivek Burte\WDL\StudyRoom\login.htm'><input type='submit' name='submit' value='SEARCH'></td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>
